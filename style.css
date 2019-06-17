@@ -8,6 +8,10 @@ body{
   font-style: sans-serif;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 a{
   color: black;
 }
