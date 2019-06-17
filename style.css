@@ -1,0 +1,345 @@
+/* common elements */
+body{
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+  display: grid;
+  grid-template-columns: 64px auto;
+  font-style: sans-serif;
+}
+
+a{
+  color: black;
+}
+
+a:hover{
+  text-decoration: none;
+}
+/* header or footer */
+
+header{
+  height: 100vh;
+  width: 64px;
+  position: fixed;
+  background-color: #f0f0f0;
+  text-align: center;
+  z-index: 4;
+  display: grid;
+  grid-template-rows: auto 265px;
+}
+
+.logo{
+  margin-top: 5px;
+  width: 54px;
+  padding: 4px;
+  transition: all 0.6s;
+}
+
+.logo:hover{
+  transform: rotate(360deg);
+}
+
+.heading{
+  display: none;
+  margin-bottom: 7px;
+}
+
+header button{
+  width: 100%;
+  background-color: #e9e9e9;
+  border: none;
+  padding: 5px;
+  height: 66px;
+  color: #2e3099;
+}
+
+button:focus{
+  outline: none;
+}
+
+header button a{
+  color: #2a2a58 !important;
+}
+
+header button:hover a{
+  color: white !important;
+}
+
+header button:hover{
+  background-color: #001d3a;
+  color: white;
+}
+
+.my-toggler{
+  color: black;
+  display: block;
+}
+
+.header-contact{
+  font-size: 2rem;
+}
+/* main-div */
+
+.main{
+  position: relative;
+  height: 100vh;
+  max-width: 95vw;
+  overflow: hidden;
+}
+
+#myVideo{
+  min-width: 100%;
+  z-index: 2;
+}
+
+#overlay{
+  background: linear-gradient(135deg,rgba(184,22,229,.5) 0%,rgba(0,4,40,.8) 100%);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  text-align: center;
+}
+
+#overlay button{
+  margin-top: 14px;
+  margin-bottom: 6px;
+  transform: scale(1.2);
+}
+
+#overlay a{
+  color: white;
+}
+
+#overlay a:hover{
+  color: black;
+}
+
+/* work we do */
+
+.work{
+  text-align: center;
+}
+
+.grid-container{
+  display: grid;
+  grid-template-columns: 33.3% 33.3% 33.3%;
+}
+
+.work div div{
+  height: 50vh;
+  border: 0.1px solid #e6e6e6;
+  background-color: #f0f0f0;
+  padding: 30px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.work div div i, section div i{
+  font-size: 3rem;
+  padding: 10px;
+}
+
+.work div div p{
+  display: none;
+}
+
+.work div div:hover{
+  background-color: #00a2f0;
+  color: white;
+}
+
+.work div div:hover p{
+  display: block;
+}
+
+/* packages */
+.packages div{
+  height: 80vh;
+  background: url('https://spigotdesign.com/wp-content/uploads/2018/10/anfal-shamsudeen-30302-unsplash.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  line-height: 2; 
+  text-align: center;
+}
+
+.packages div button{
+  margin-top: 14px;
+  margin-bottom: 6px;
+  transform: scale(1.2);
+}
+
+.packages div button:hover{
+  text-shadow: 0 0 2px #000;
+}
+
+/* owner-words */
+
+.owner-words > div{
+  height: 60vh;
+  padding: 0 130px;
+  background-color: #f7f7f7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+/* photos */
+
+.photos div div{
+  height: 50vh;
+}
+
+#photo-1, #photo-2,#photo-3, #photo-4, #photo-5, #photo-6{
+  position: relative;
+}
+#photo-1{
+  background: url('https://spigotdesign.com/wp-content/uploads/2016/07/friendemic-header.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#photo-2{
+  background: url('https://spigotdesign.com/wp-content/uploads/2019/08/mcnulty-mockup-1.jpg)');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#photo-3{
+  background: url('https://spigotdesign.com/wp-content/uploads/2017/08/UFC-Thumbnail.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#photo-4{
+  background: url('https://spigotdesign.com/wp-content/uploads/2017/08/SYNC-Background.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#photo-5{
+  background: url('https://spigotdesign.com/wp-content/uploads/2013/03/sotm-thumb@2x.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#photo-6{
+  background: url('https://spigotdesign.com/wp-content/uploads/2017/12/litsalon-marquee.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.overlay-photos{
+  background-color: rgba(0, 0, 0, .6);
+  display: none;
+}
+
+.photos div div:hover .overlay-photos{
+  display: block;
+}
+
+/* media queries */
+@media only screen and (max-width: 600px){
+  body{
+    display: block;
+  }
+  header{
+    height: 68px;
+    width: 100vw;
+    position: fixed;
+    bottom: 0;
+    background-color: #001d3a;
+    text-align: left;
+    padding: 4px;
+    z-index: 4;
+    grid-template-columns: auto 280px;
+  }
+
+  header button{
+    width: 50px;
+    border: none;
+    padding: 5px;
+    height: 100%;
+    color: white !important;
+    background-color: #001d3a !important;
+  }
+
+  header button a{
+    color: white !important;
+  }
+  
+  header button:hover a{
+    color: white !important;
+  }
+  
+  header button:hover{
+    background-color: #001d3a;
+    color: white;
+  }
+
+  .header-contact{
+    text-align: right;
+  }
+
+  #toggler{
+    display: none;
+  }
+
+  #overlay{
+    text-align: center;
+  }
+  
+  #overlay h1{
+    font-size: 24px;
+  }
+
+  .main{
+    height: 100vh;
+    overflow: hidden;
+  }
+
+  .main{
+    max-width: 100% !important;
+  }
+
+  .grid-container{
+    display: grid;
+    grid-template-columns: auto;
+  }
+
+  .owner-words > div{
+    padding: 0 40px;
+  }
+
+  #myVideo{
+    min-width: 100% !important;
+    z-index: 2;
+    overflow-x: hidden;
+  }
+  
+}
